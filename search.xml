@@ -10,6 +10,20 @@
       </tags>
   </entry>
   <entry>
+    <title>第四次测试</title>
+    <url>/blog/2020/07/21/%E7%AC%AC%E5%9B%9B%E6%AC%A1%E6%B5%8B%E8%AF%95/</url>
+    <content><![CDATA[<p>测试图片显示及代码块、链接</p>
+<img src="/blog/2020/07/21/%E7%AC%AC%E5%9B%9B%E6%AC%A1%E6%B5%8B%E8%AF%95/2.jpg" class title="This is an example image">
+
+<a id="more"></a>
+
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">// Particle</span><br><span class="line">var</span><br><span class="line">Particle = function () &#123;</span><br><span class="line"></span><br><span class="line">  function Particle(system, x, y) &#123;_classCallCheck(this, Particle);</span><br><span class="line">    this.system = system;</span><br><span class="line">    this.universe = this.system.world.universe;</span><br><span class="line">    this.x = x;</span><br><span class="line">    this.y = y;</span><br><span class="line">    this.color = getRandomColor();</span><br><span class="line">    this.life = 1;</span><br><span class="line">    this.aging = getRandom(0.99, 0.999); // 0.99, 0.999 || 0.999, 0.9999</span><br><span class="line"></span><br><span class="line">    this.r = getRandomInt(8, 16);</span><br><span class="line">    this.speed = getRandom(3, 8);</span><br><span class="line">    this.velocity = [</span><br><span class="line">    getRandom(-this.speed, this.speed),</span><br><span class="line">    getRandom(-this.speed, this.speed)];</span><br><span class="line"></span><br><span class="line">  &#125;_createClass(Particle, [&#123; key: 'update', value: function update(</span><br><span class="line"></span><br><span class="line">    dt) &#123;</span><br></pre></td></tr></table></figure>
+<pre><code>[主页]: (https: //ran_brother.gitee.io/hhh)</code></pre>]]></content>
+      <tags>
+        <tag>测试</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>第二次测试</title>
     <url>/blog/2020/07/17/%E7%AC%AC%E4%BA%8C%E6%AC%A1%E6%B5%8B%E8%AF%95/</url>
     <content><![CDATA[<p>测试图片上传及在hexo博客框架内的显示。by然哥。<br><img src="/blog/pc/1.jpg" alt=" "></p>
