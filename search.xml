@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>第一次测试</title>
-    <url>/blog/2020/06/25/%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%B5%8B%E8%AF%95/</url>
-    <content><![CDATA[<p>这篇文章用于博客测试，当你看到这篇文章，说明hexo架构正常运行。by然哥</p>
+    <title>第二次测试</title>
+    <url>/blog/2020/07/17/%E7%AC%AC%E4%BA%8C%E6%AC%A1%E6%B5%8B%E8%AF%95/</url>
+    <content><![CDATA[<p>测试图片上传及在hexo博客框架内的显示。by然哥。<br><img src="/blog/pc/1.jpg" alt=" "></p>
 ]]></content>
+      <tags>
+        <tag>测试</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第三次测试</title>
+    <url>/blog/2020/07/20/%E7%AC%AC%E4%B8%89%E6%AC%A1%E6%B5%8B%E8%AF%95/</url>
+    <content><![CDATA[<p>第二次测试博客的图片显示</p>
+<img src="/blog/2020/07/20/%E7%AC%AC%E4%B8%89%E6%AC%A1%E6%B5%8B%E8%AF%95/1.jpg" class title="This is an example image">]]></content>
       <tags>
         <tag>测试</tag>
       </tags>
@@ -25,19 +34,10 @@
       </tags>
   </entry>
   <entry>
-    <title>第二次测试</title>
-    <url>/blog/2020/07/17/%E7%AC%AC%E4%BA%8C%E6%AC%A1%E6%B5%8B%E8%AF%95/</url>
-    <content><![CDATA[<p>测试图片上传及在hexo博客框架内的显示。by然哥。<br><img src="/blog/pc/1.jpg" alt=" "></p>
+    <title>第一次测试</title>
+    <url>/blog/2020/06/25/%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%B5%8B%E8%AF%95/</url>
+    <content><![CDATA[<p>这篇文章用于博客测试，当你看到这篇文章，说明hexo架构正常运行。by然哥</p>
 ]]></content>
-      <tags>
-        <tag>测试</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第三次测试</title>
-    <url>/blog/2020/07/20/%E7%AC%AC%E4%B8%89%E6%AC%A1%E6%B5%8B%E8%AF%95/</url>
-    <content><![CDATA[<p>第二次测试博客的图片显示</p>
-<img src="/blog/2020/07/20/%E7%AC%AC%E4%B8%89%E6%AC%A1%E6%B5%8B%E8%AF%95/1.jpg" class title="This is an example image">]]></content>
       <tags>
         <tag>测试</tag>
       </tags>
