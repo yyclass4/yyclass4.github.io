@@ -10,15 +10,6 @@
       </tags>
   </entry>
   <entry>
-    <title>第三次测试</title>
-    <url>/blog/2020/07/20/%E7%AC%AC%E4%B8%89%E6%AC%A1%E6%B5%8B%E8%AF%95/</url>
-    <content><![CDATA[<p>第二次测试博客的图片显示</p>
-<img src="/blog/2020/07/20/%E7%AC%AC%E4%B8%89%E6%AC%A1%E6%B5%8B%E8%AF%95/1.jpg" class title="This is an example image">]]></content>
-      <tags>
-        <tag>测试</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>第二次测试</title>
     <url>/blog/2020/07/17/%E7%AC%AC%E4%BA%8C%E6%AC%A1%E6%B5%8B%E8%AF%95/</url>
     <content><![CDATA[<p>测试图片上传及在hexo博客框架内的显示。by然哥。<br><img src="/blog/pc/1.jpg" alt=" "></p>
@@ -38,6 +29,15 @@
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 <p>more: <a href="https://ran_brother.gitee.io/hhh">主页</a></p>
 ]]></content>
+      <tags>
+        <tag>测试</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第三次测试</title>
+    <url>/blog/2020/07/20/%E7%AC%AC%E4%B8%89%E6%AC%A1%E6%B5%8B%E8%AF%95/</url>
+    <content><![CDATA[<p>第二次测试博客的图片显示</p>
+<img src="/blog/2020/07/20/%E7%AC%AC%E4%B8%89%E6%AC%A1%E6%B5%8B%E8%AF%95/1.jpg" class title="This is an example image">]]></content>
       <tags>
         <tag>测试</tag>
       </tags>
