@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>然哥的博客 - 冥界的花</title><meta name="description"><meta name="author" content="ran brother"><meta name="copyright" content="ran brother"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/blog/img/favicon.jpg"><link rel="canonical" href="https://ran_brother.gitee.io/blog/"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin="crossorigin"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta property="og:type" content="website"><meta property="og:title" content="然哥的博客"><meta property="og:url" content="https://ran_brother.gitee.io/blog/"><meta property="og:site_name" content="然哥的博客"><meta property="og:description"><meta property="og:image" content="https://ran_brother.gitee.io/blog/img/avatar.png"><meta property="article:published_time" content="2020-08-03T07:58:30.075Z"><meta property="article:modified_time" content="2020-08-03T07:58:30.075Z"><meta name="twitter:card" content="summary"><script>var activateDarkMode = function () {
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>然哥的博客 - 冥界的花</title><meta name="description"><meta name="author" content="ran brother"><meta name="copyright" content="ran brother"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/blog/img/favicon.jpg"><link rel="canonical" href="https://ran_brother.gitee.io/blog/"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin="crossorigin"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta property="og:type" content="website"><meta property="og:title" content="然哥的博客"><meta property="og:url" content="https://ran_brother.gitee.io/blog/"><meta property="og:site_name" content="然哥的博客"><meta property="og:description"><meta property="og:image" content="https://ran_brother.gitee.io/blog/img/avatar.png"><meta property="article:published_time" content="2020-08-03T08:05:09.519Z"><meta property="article:modified_time" content="2020-08-03T08:05:09.519Z"><meta name="twitter:card" content="summary"><script>var activateDarkMode = function () {
   document.documentElement.setAttribute('data-theme', 'dark')
   if (document.querySelector('meta[name="theme-color"]') !== null) {
     document.querySelector('meta[name="theme-color"]').setAttribute('content', '#000')
@@ -96,7 +96,7 @@ if (autoChangeMode === '1') {
   isHome: true,
   isHighlightShrink: false,
   isSidebar: false,
-  postUpdate: '2020-08-03 15:58:30'
+  postUpdate: '2020-08-03 16:05:09'
 }</script><noscript><style>
 #nav {
   opacity: 1
@@ -112,17 +112,22 @@ if (autoChangeMode === '1') {
   document.getElementById('loading-box').classList.add("loaded")
 }
 window.addEventListener('load',endLoading)</script><div class="js-pjax"><script>function subtitleType () {
-  if (true) { 
-    var typed = new Typed("#subtitle", {
-      strings: "抱怨冥界没有花的她不知道&#44;自己就是冥界唯一的鲜花,Never put off till tomorrow what you can do today".split(","),
-      startDelay: 300,
-      typeSpeed: 150,
-      loop: true,
-      backSpeed: 50
-    })
-  } else {
-    document.getElementById("subtitle").innerHTML = '抱怨冥界没有花的她不知道&#44;自己就是冥界唯一的鲜花'
-  }
+  $.getJSON('https://v1.hitokoto.cn', function (data) {
+    if (true) {
+      var from = '出自 ' + data.from
+      var sub = "抱怨冥界没有花的她不知道&#44;自己就是冥界唯一的鲜花,Never put off till tomorrow what you can do today".length == 0 ? new Array() : "抱怨冥界没有花的她不知道&#44;自己就是冥界唯一的鲜花,Never put off till tomorrow what you can do today".split(',')
+      var both = sub.unshift(data.hitokoto, from)
+      var typed = new Typed('#subtitle', {
+        strings: sub,
+        startDelay: 300,
+        typeSpeed: 150,
+        loop: true,
+        backSpeed: 50,
+      })
+    } else {
+      document.getElementById('subtitle').innerHTML = data.hitokoto
+    }
+  })
 }
 
 if (true) {
@@ -130,7 +135,8 @@ if (true) {
   else $.getScript('https://cdn.jsdelivr.net/npm/typed.js/lib/typed.min.js', subtitleType)
 } else {
   subtitleType()
-}</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><canvas class="fireworks"></canvas><script src="https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js"></script><script src="/blog/js/third-party/fireworks.js"></script><script defer="defer" id="ribbon_piao" mobile="false" src="/blog/js/third-party/piao.js"></script><script src="/blog/js/third-party/activate-power-mode.js"></script><script>POWERMODE.colorful = true;
+}
+</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><canvas class="fireworks"></canvas><script src="https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js"></script><script src="/blog/js/third-party/fireworks.js"></script><script defer="defer" id="ribbon_piao" mobile="false" src="/blog/js/third-party/piao.js"></script><script src="/blog/js/third-party/activate-power-mode.js"></script><script>POWERMODE.colorful = true;
 POWERMODE.shake = true;
 document.body.addEventListener('input', POWERMODE);
 </script></div><script src="/blog/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body></html>
