@@ -3,8 +3,8 @@
   <entry>
     <title>第一天启动博客</title>
     <url>/blog/2020/08/01/%E7%AC%AC%E4%B8%80%E5%A4%A9%E5%90%AF%E5%8A%A8%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[ <img src="/blog/2020/08/01/%E7%AC%AC%E4%B8%80%E5%A4%A9%E5%90%AF%E5%8A%A8%E5%8D%9A%E5%AE%A2/example.jpg" class title="This is an example image">
-<p>hhhhhhhh</p>
+    <content><![CDATA[ <img src= "/blog/img/loading.gif" data-lazy-src="/blog/2020/08/01/%E7%AC%AC%E4%B8%80%E5%A4%A9%E5%90%AF%E5%8A%A8%E5%8D%9A%E5%AE%A2/example.jpg" class title="This is an example image">
+<p>这篇文章用于测试</p>
 ]]></content>
       <tags>
         <tag>测试</tag>
