@@ -20,14 +20,14 @@
           </div>
 
 <h1 id="推送到gitee（因为github经常被墙，巨慢无比）"><a href="#推送到gitee（因为github经常被墙，巨慢无比）" class="headerlink" title="推送到gitee（因为github经常被墙，巨慢无比）"></a>推送到gitee（因为github经常被墙，巨慢无比）</h1><p> 首先你要有个<a href="https://gitee.com/" target="_blank" rel="noopener">gitee</a>的账号，在上面创建一个新的仓库，名字随便取。</p>
- 
+ <img src="/blog/2020/08/04/%E5%85%B3%E4%BA%8E%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B/a.png" class title="实例图片">
 
 <p> 然后进入到<code>blog</code>目录里先后执行：<br> <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo --save</span><br><span class="line">hexo g</span><br></pre></td></tr></table></figure><br> 从命令的反馈里可以看到，hexo生成了很多<code>css</code>,<code>js</code>的静态文件。然后继续执行命令：<br> <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">cnpm install hexo-devepoler-git --save</span><br></pre></td></tr></table></figure></p>
 <p> 这里安装了一个hexo的插件，用于自动部署。</p>
 <p> 随后进入到blog目录里打开_config.yml文件，在最下面添加以下代码：</p>
  <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repository:</span> </span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
 <p>然后，回到gitee上你刚刚新建的仓库里，复制它给你的<code>ssh</code>地址到上述代码的<code>repository</code>中：</p>
-
+<img src="/blog/2020/08/04/%E5%85%B3%E4%BA%8E%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B/b.png" class title="实例图片">
 
 <div class="note danger">
             <p>注意：在配置所有的_config.yml文件时，所有的冒号后面都要加一个空格，否则hexo命令会报错</p>
