@@ -4,7 +4,7 @@
     <title>关于博客搭建的那些事</title>
     <url>/blog/2020/08/04/%E5%85%B3%E4%BA%8E%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B/</url>
     <content><![CDATA[<p>  啦啦啦，折腾了快两个月，博客终于搞定了=。=<br>  这期间由于学习方面的事情，建博客的工作停滞了很长一段时间。现在终于期末考完了，有时间折腾了。<br>  当然，在这里要感谢<a href="https://blog.soulxyz.top/" target="_blank" rel="noopener">开哥</a>,不厌其烦的为我提供技术指导。<br>  还要感谢<a href="https://demo.jerryc.me/" target="_blank" rel="noopener">jerry</a>,提供了非常棒的<code>butterfly</code>主题。<br>  在白手起家建博客的过程中，踩了无数的坑。我想我要把完整的过程记下来，方便日后的整理和学习。也对像我一样的<code>git</code>小白提供帮助。</p>
-<h1 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h1><p>  需要安装：<a href="http://nodejs.cn/download/" target="_blank" rel="noopener">node.js</a>,<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">git工具</a>.两种工具都是傻瓜式的安装，一路选择默认就可以了。</p>
+<h1 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h1><p>  需要安装：<a href="http://nodejs.cn/download/" target="_blank" rel="noopener">node.js</a>,<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">git工具</a>.两种工具都是傻瓜式的安装，一路选择默认就可以了。<br>            还有读写<code>.yml</code>文件的工具，这里推荐<a href="https://www.microsoft.com/zh-cn/p/serris-code-editor/9nblggh4rm22?activetab=pivot:overviewtab" target="_blank" rel="noopener">官方的软件</a></p>
 <div class="note primary no-icon">
             <p>安装完成后，在电脑桌面上点击右键，可以看到对话框中多了<code>git GUI here</code>和<code>git bash here</code>,说明安装成功。</p>
           </div>
@@ -18,6 +18,26 @@
  <div class="note primary no-icon">
             <p>如果你这时候已经迫不及待的想看看自己的博客了，可以在blog目录下执行命令<code>hexo s</code>,然后再浏览器中输入网址<code>http://localhost:4000</code>,就可以在本地预览博客了。</p>
           </div>
+
+<h1 id="推送到gitee（因为github经常被墙，巨慢无比）"><a href="#推送到gitee（因为github经常被墙，巨慢无比）" class="headerlink" title="推送到gitee（因为github经常被墙，巨慢无比）"></a>推送到gitee（因为github经常被墙，巨慢无比）</h1><p> 首先你要有个<a href="https://gitee.com/" target="_blank" rel="noopener">gitee</a>的账号，在上面创建一个新的仓库，名字随便取。</p>
+ 
+
+<p> 然后进入到<code>blog</code>目录里先后执行：<br> <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo --save</span><br><span class="line">hexo g</span><br></pre></td></tr></table></figure><br> 从命令的反馈里可以看到，hexo生成了很多<code>css</code>,<code>js</code>的静态文件。然后继续执行命令：<br> <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">cnpm install hexo-devepoler-git --save</span><br></pre></td></tr></table></figure></p>
+<p> 这里安装了一个hexo的插件，用于自动部署。</p>
+<p> 随后进入到blog目录里打开_config.yml文件，在最下面添加以下代码：</p>
+ <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repository:</span> </span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
+<p>然后，回到gitee上你刚刚新建的仓库里，复制它给你的<code>ssh</code>地址到上述代码的<code>repository</code>中：</p>
+
+
+<div class="note danger">
+            <p>注意：在配置所有的_config.yml文件时，所有的冒号后面都要加一个空格，否则hexo命令会报错</p>
+          </div>
+
+
+
+
+
+
 
 
 
