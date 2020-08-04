@@ -13,7 +13,15 @@
             <p>安装node.js时要注意版本信息，有时版本过高git命令会报错，这是就要安装旧一点的node.js</p>
           </div>
 
-<h1 id="初始化博客"><a href="#初始化博客" class="headerlink" title="初始化博客"></a>初始化博客</h1><p> 由于<code>hexo</code>的镜像文件在国外，</p>
+<h1 id="hexo的安装及初始化博客"><a href="#hexo的安装及初始化博客" class="headerlink" title="hexo的安装及初始化博客"></a>hexo的安装及初始化博客</h1><p> 由于<code>hexo</code>的镜像文件在国外，经常会被墙，导致初始化失败，所以这时候就要先安装淘宝的镜像文件来代替。在电脑桌面上右键打开git bash，执行：<br> <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install -g cnpm --registry=http://registry.npm.taobao.org</span><br></pre></td></tr></table></figure><br> 等待安装完成。然后继续执行：<br> <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">cnpm install -g hexo</span><br></pre></td></tr></table></figure></p>
+<p> 安装完成后，继续执行：<br> <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo init blog</span><br></pre></td></tr></table></figure><br> 这一个步骤对网络要求比较高，如果网络不顺畅，很容易出现各种报错(warning),多试几次就好了。等到命令执行完后，再执行:<br> <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure><br> 至此，hexo就算安装完了。回到电脑桌面，可以看到多出来一个名为<code>blog</code>的文件夹。这就是hexo工作的文件夹。</p>
+ <div class="note primary no-icon">
+            <p>如果你这时候已经迫不及待的想看看自己的博客了，可以在blog目录下执行命令<code>hexo s</code>,然后再浏览器中输入网址<code>http://localhost:4000</code>,就可以在本地预览博客了。</p>
+          </div>
+
+
+
+
 ]]></content>
       <tags>
         <tag>note</tag>
