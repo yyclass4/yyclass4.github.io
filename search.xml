@@ -1,16 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>第一天启动博客</title>
-    <url>/blog/2020/08/01/%E7%AC%AC%E4%B8%80%E5%A4%A9%E5%90%AF%E5%8A%A8%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[ <img src="/blog/2020/08/01/%E7%AC%AC%E4%B8%80%E5%A4%A9%E5%90%AF%E5%8A%A8%E5%8D%9A%E5%AE%A2/example.jpg" class title="This is an example image">
-<p>测试用文章</p>
-]]></content>
-      <tags>
-        <tag>测试</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>关于博客搭建的那些事</title>
     <url>/blog/2020/08/04/%E5%85%B3%E4%BA%8E%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B/</url>
     <content><![CDATA[<p>  啦啦啦，折腾了快两个月，博客终于搞定了=。=<br>  这期间由于学习方面的事情，建博客的工作停滞了很长一段时间。现在终于期末考完了，有时间折腾了。<br>  当然，在这里要感谢<a href="https://blog.soulxyz.top/" target="_blank" rel="noopener">开哥</a>,不厌其烦的为我提供技术指导。<br>  还要感谢<a href="https://demo.jerryc.me/" target="_blank" rel="noopener">jerry</a>,提供了非常棒的<code>butterfly</code>主题。<br>  在白手起家建博客的过程中，踩了无数的坑。我想我要把完整的过程记下来，方便日后的整理和学习。也对像我一样的<code>git</code>小白提供帮助。</p>
@@ -71,9 +61,26 @@
 <p>完成之后再执行<code>hexo clean</code>,<code>hexo g</code>,hexo d<code>,去更新gitee pages服务，</code>css<code>,</code>js`文件就可以正常显示了。</p>
 <h1 id="发表新的文章"><a href="#发表新的文章" class="headerlink" title="发表新的文章"></a>发表新的文章</h1><p> 在blog目录中，执行：<br> <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo new 文章题目</span><br></pre></td></tr></table></figure><br> 就会发现在blog/source/posts文件夹里多了一个与你新的文章名字相同的.md文件。用编辑器编辑里面的内容，注意要用<code>markdown</code>语法。<br> 如果对markdown语法不熟练，<a href="http://www.mdeditor.com/" target="_blank" rel="noopener">请戳我</a>.完成之后保存。回到blog目录中，先后执行：<br> <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure><br> 再去gitee更新一下pages服务，就可以看到自己的文章了。</p>
 <p> 以上只是hexo的基础部分，很多地方不完善，日后我会把其他完善的过程继续记录下。</p>
+ <div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"video":{"url":"http://image0012.test.upcdn.net/%E6%A0%BC%E5%BC%8F%E5%B7%A5%E5%8E%82%20%E5%B1%8F%E5%B9%95%E5%BD%95%E5%83%8F20200804_152833.mp4"},"danmaku":{"id":"somedefid","api":"https://api.prprpr.me/dplayer/"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>
+
+
+
+
+
+
 ]]></content>
       <tags>
         <tag>note</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第一天启动博客</title>
+    <url>/blog/2020/08/01/%E7%AC%AC%E4%B8%80%E5%A4%A9%E5%90%AF%E5%8A%A8%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[ <img src="/blog/2020/08/01/%E7%AC%AC%E4%B8%80%E5%A4%A9%E5%90%AF%E5%8A%A8%E5%8D%9A%E5%AE%A2/example.jpg" class title="This is an example image">
+<p>测试用文章</p>
+]]></content>
+      <tags>
+        <tag>测试</tag>
       </tags>
   </entry>
 </search>
