@@ -4,12 +4,12 @@
     <title>关于博客搭建的那些事</title>
     <url>/blog/2020/08/04/%E5%85%B3%E4%BA%8E%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\blog\assets\css\APlayer.min.css"><script src="\blog\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>  啦啦啦，折腾了快两个月，博客终于搞定了=。=<br>  这期间由于学习方面的事情，建博客的工作停滞了很长一段时间。现在终于期末考完了，有时间折腾了。<br>  当然，在这里要感谢<a href="https://blog.soulxyz.top/" target="_blank" rel="noopener">开哥</a>,不厌其烦的为我提供技术指导。<br>  还要感谢<a href="https://demo.jerryc.me/" target="_blank" rel="noopener">jerry</a>,提供了非常棒的<code>butterfly</code>主题。<br>  在白手起家建博客的过程中，踩了无数的坑。我想我要把完整的过程记下来，方便日后的整理和学习。也对像我一样的<code>git</code>小白提供帮助。<br>  <code>先来首歌放松一下吧</code><br>  
-        <div id="aplayer-ytjRgaue" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-PpfZXKcQ" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content"></pre>
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-ytjRgaue"),
+            element: document.getElementById("aplayer-PpfZXKcQ"),
             narrow: false,
             autoplay: false,
             showlrc: false,
