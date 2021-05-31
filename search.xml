@@ -1,25 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>第一天启动博客</title>
-    <url>/blog/2020/08/01/%E7%AC%AC%E4%B8%80%E5%A4%A9%E5%90%AF%E5%8A%A8%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\blog\assets\css\APlayer.min.css"><script src="\blog\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script> <img src="/blog/2020/08/01/%E7%AC%AC%E4%B8%80%E5%A4%A9%E5%90%AF%E5%8A%A8%E5%8D%9A%E5%AE%A2/example.jpg" class title="This is an example image">
-<p>测试用文章</p>
+    <title>重新恢复博客</title>
+    <url>/blog/2021/05/31/%E9%87%8D%E6%96%B0%E6%81%A2%E5%A4%8D%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\blog\assets\css\APlayer.min.css"><script src="\blog\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>  又有很长一段时间没有更新博客了，这段时间里发生了太多事情，太多变故了。首先是疫情的反弹，广州现在疫情防控形势很严峻，都是居家学习<br>，所以才有时间更新博客，因为平时学业上的事情实在是太多了。<br>  时间过得真快，一下子就高三了，努力！<br>  本来当时想着要经常更新博客的，但时间根本不允许，以后有时间了一定要频繁更新：）</p>
 ]]></content>
       <tags>
-        <tag>测试</tag>
+        <tag>说明</tag>
       </tags>
   </entry>
   <entry>
     <title>关于博客搭建的那些事</title>
     <url>/blog/2020/08/04/%E5%85%B3%E4%BA%8E%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\blog\assets\css\APlayer.min.css"><script src="\blog\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>  啦啦啦，折腾了快两个月，博客终于搞定了=。=<br>  这期间由于学习方面的事情，建博客的工作停滞了很长一段时间。现在终于期末考完了，有时间折腾了。<br>  当然，在这里要感谢<a href="https://blog.soulxyz.top/" target="_blank" rel="noopener">开哥</a>,不厌其烦的为我提供技术指导。<br>  还要感谢<a href="https://demo.jerryc.me/" target="_blank" rel="noopener">jerry</a>,提供了非常棒的<code>butterfly</code>主题。<br>  在白手起家建博客的过程中，踩了无数的坑。我想我要把完整的过程记下来，方便日后的整理和学习。也对像我一样的<code>git</code>小白提供帮助。<br>  <code>先来首歌放松一下吧</code><br>  
-        <div id="aplayer-OBakPneq" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-DhduNmuJ" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content"></pre>
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-OBakPneq"),
+            element: document.getElementById("aplayer-DhduNmuJ"),
             narrow: false,
             autoplay: false,
             showlrc: false,
@@ -94,6 +93,16 @@
 ]]></content>
       <tags>
         <tag>note</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第一天启动博客</title>
+    <url>/blog/2020/08/01/%E7%AC%AC%E4%B8%80%E5%A4%A9%E5%90%AF%E5%8A%A8%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\blog\assets\css\APlayer.min.css"><script src="\blog\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script> <img src="/blog/2020/08/01/%E7%AC%AC%E4%B8%80%E5%A4%A9%E5%90%AF%E5%8A%A8%E5%8D%9A%E5%AE%A2/example.jpg" class title="This is an example image">
+<p>测试用文章</p>
+]]></content>
+      <tags>
+        <tag>测试</tag>
       </tags>
   </entry>
   <entry>
