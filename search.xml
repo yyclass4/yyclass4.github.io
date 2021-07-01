@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>博客加载速度问题</title>
-    <url>/yyclass4/2020/08/06/%E5%8D%9A%E5%AE%A2%E5%8A%A0%E8%BD%BD%E9%80%9F%E5%BA%A6%E9%97%AE%E9%A2%98/</url>
+    <url>/yyclass4.github.io/2020/08/06/%E5%8D%9A%E5%AE%A2%E5%8A%A0%E8%BD%BD%E9%80%9F%E5%BA%A6%E9%97%AE%E9%A2%98/</url>
     <content><![CDATA[<p>前天，有一哥们儿跟我说我的博客加载速度超慢。我自己看了一下，好像时确实存在这个问题。这不能赖gitee或者是运营商，得从自身找原因。</p>
 <h1 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h1><p> 首先想到的是图片的大小问题，这跟加载速度有很大关系，越大越慢，越小越快。在之前两篇的博客里，实例图片都用的是原图，也就是上传的<code>gitee</code>仓库里的。当然，这种办法也很重要，这里有必要说明一下。</p>
 <h2 id="图片引用的相对路径"><a href="#图片引用的相对路径" class="headerlink" title="图片引用的相对路径"></a>图片引用的相对路径</h2><p>  首先，在<code>blog</code>目录下找到<code>_config.yml</code>文件，找到以下代码：<br>  <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line">  <span class="comment"># Writing</span></span><br><span class="line"><span class="attr">new_post_name:</span> <span class="string">:title.md</span> <span class="comment"># File name of new posts</span></span><br><span class="line"><span class="attr">default_layout:</span> <span class="string">post</span></span><br><span class="line"><span class="attr">titlecase:</span> <span class="literal">false</span> <span class="comment"># Transform title into titlecase</span></span><br><span class="line"><span class="attr">external_link:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span> <span class="comment"># Open external links in new tab</span></span><br><span class="line">  <span class="attr">field:</span> <span class="string">site</span> <span class="comment"># Apply to the whole site</span></span><br><span class="line">  <span class="attr">exclude:</span> <span class="string">''</span></span><br><span class="line"><span class="attr">filename_case:</span> <span class="number">0</span></span><br><span class="line"><span class="attr">render_drafts:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">post_asset_folder:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">relative_link:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">future:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">highlight:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">line_number:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">auto_detect:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">tab_replace:</span> <span class="string">''</span></span><br><span class="line">  <span class="attr">wrap:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">hljs:</span> <span class="literal">false</span></span><br></pre></td></tr></table></figure><br>将其中<code>post_asset_folder</code>后的<code>false</code>改为<code>true</code>，这样以后在创建新文章的时候，hexo就会在<code>blog/source/posts</code>目录下，新建一个与你博客标题同名的文件夹，你就可以把要用的图片放进去。<br>在编写文章的<code>.md</code>文件时在要插入图片的地方使用以下标签：</p>
@@ -23,7 +23,7 @@
   </entry>
   <entry>
     <title>关于博客搭建的那些事</title>
-    <url>/yyclass4/2020/08/04/%E5%85%B3%E4%BA%8E%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B/</url>
+    <url>/yyclass4.github.io/2020/08/04/%E5%85%B3%E4%BA%8E%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B/</url>
     <content><![CDATA[<p>  啦啦啦，折腾了快两个月，博客终于搞定了=。=<br>  这期间由于学习方面的事情，建博客的工作停滞了很长一段时间。现在终于期末考完了，有时间折腾了。<br>  当然，在这里要感谢<a href="https://blog.soulxyz.top/" target="_blank" rel="noopener">开哥</a>,不厌其烦的为我提供技术指导。<br>  还要感谢<a href="https://demo.jerryc.me/" target="_blank" rel="noopener">jerry</a>,提供了非常棒的<code>butterfly</code>主题。<br>  在白手起家建博客的过程中，踩了无数的坑。我想我要把完整的过程记下来，方便日后的整理和学习。也对像我一样的<code>git</code>小白提供帮助。<br>  <code>先来首歌放松一下吧</code></p>
 <h1 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h1><p>  需要安装：<a href="http://nodejs.cn/download/" target="_blank" rel="noopener">node.js</a>,<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">git工具</a>.两种工具都是傻瓜式的安装，一路选择默认就可以了。<br>            还有读写<code>.yml</code>文件的工具，这里推荐<a href="https://www.microsoft.com/zh-cn/p/serris-code-editor/9nblggh4rm22?activetab=pivot:overviewtab" target="_blank" rel="noopener">官方的软件</a></p>
 <div class="note primary no-icon">
@@ -41,14 +41,14 @@
           </div>
 
 <h1 id="推送到gitee（因为github经常被墙，巨慢无比）"><a href="#推送到gitee（因为github经常被墙，巨慢无比）" class="headerlink" title="推送到gitee（因为github经常被墙，巨慢无比）"></a>推送到gitee（因为github经常被墙，巨慢无比）</h1><p> 首先你要有个<a href="https://gitee.com/" target="_blank" rel="noopener">gitee</a>的账号，在上面创建一个新的仓库，名字随便取。</p>
- <img src="/yyclass4/2020/08/04/%E5%85%B3%E4%BA%8E%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B/a.png" class title="实例图片">
+ <img src="/yyclass4.github.io/2020/08/04/%E5%85%B3%E4%BA%8E%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B/a.png" class title="实例图片">
 
 <p> 然后进入到<code>blog</code>目录里先后执行：<br> <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo --save</span><br><span class="line">hexo g</span><br></pre></td></tr></table></figure><br> 从命令的反馈里可以看到，hexo生成了很多<code>css</code>,<code>js</code>的静态文件。然后继续执行命令：<br> <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">cnpm install hexo-devepoler-git --save</span><br></pre></td></tr></table></figure></p>
 <p> 这里安装了一个hexo的插件，用于自动部署。</p>
 <p> 随后进入到blog目录里打开_config.yml文件，在最下面添加以下代码：</p>
  <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repository:</span> </span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
 <p>然后，回到gitee上你刚刚新建的仓库里，复制它给你的<code>ssh</code>地址到上述代码的<code>repository</code>中：</p>
-<img src="/yyclass4/2020/08/04/%E5%85%B3%E4%BA%8E%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B/b.png" class title="实例图片">
+<img src="/yyclass4.github.io/2020/08/04/%E5%85%B3%E4%BA%8E%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B/b.png" class title="实例图片">
 
 <div class="note danger">
             <p>注意：在配置所有的_config.yml文件时，所有的冒号后面都要加一个空格，否则hexo命令会报错</p>
@@ -65,15 +65,15 @@
 <p>配置完后，接着输入命令：</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">"你在上一步输入的邮箱"</span></span><br></pre></td></tr></table></figure>
 <p>然后一路回车，出现类似一下回馈，代表创建<code>ssh</code>密匙完成：</p>
-<img src="/yyclass4/2020/08/04/%E5%85%B3%E4%BA%8E%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B/c.png" class title="实例图片">
+<img src="/yyclass4.github.io/2020/08/04/%E5%85%B3%E4%BA%8E%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B/c.png" class title="实例图片">
 
 <p>创建完成后，再执行命令：</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">cat ~/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
 <p>git的回馈就是你的密匙，把他全部copy下来，粘贴到gitee上</p>
-<img src="/yyclass4/2020/08/04/%E5%85%B3%E4%BA%8E%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B/d.png" class title="实例图片">
+<img src="/yyclass4.github.io/2020/08/04/%E5%85%B3%E4%BA%8E%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B/d.png" class title="实例图片">
 <p>在<code>gitee主页--头像--设置--ssh密匙</code>里添加密匙</p>
 <p>之后回到本地，在blog目录里执行<code>hexo d</code>,博客就推送到线上了，去<code>仓库--服务--gitee pages</code>开通gitee.pages服务，博客就算建完了。</p>
-<img src="/yyclass4/2020/08/04/%E5%85%B3%E4%BA%8E%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B/e.png" class title="实例图片">
+<img src="/yyclass4.github.io/2020/08/04/%E5%85%B3%E4%BA%8E%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B/e.png" class title="实例图片">
 
 <p>完成之后，打开自己的网页，会发现<code>css</code>,<code>js</code>文件没有加载，这时候你又要回到本地的_<code>cnfig.yml</code>文件中，找到以下代码片段：</p>
 <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># URL</span></span><br><span class="line"><span class="comment">## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'</span></span><br><span class="line"><span class="attr">url:</span> </span><br><span class="line"><span class="attr">root:</span></span><br></pre></td></tr></table></figure>
@@ -88,8 +88,27 @@
       </tags>
   </entry>
   <entry>
+    <title>第一天启动博客</title>
+    <url>/yyclass4.github.io/2020/08/01/%E7%AC%AC%E4%B8%80%E5%A4%A9%E5%90%AF%E5%8A%A8%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[ <img src="/yyclass4.github.io/2020/08/01/%E7%AC%AC%E4%B8%80%E5%A4%A9%E5%90%AF%E5%8A%A8%E5%8D%9A%E5%AE%A2/example.jpg" class title="This is an example image">
+<p>测试用文章</p>
+]]></content>
+      <tags>
+        <tag>测试</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>重新恢复博客</title>
+    <url>/yyclass4.github.io/2021/05/31/%E9%87%8D%E6%96%B0%E6%81%A2%E5%A4%8D%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<p>  又有很长一段时间没有更新博客了，这段时间里发生了太多事情，太多变故了。首先是疫情的反弹，广州现在疫情防控形势很严峻，都是居家学习，所以才有时间更新博客，平时学业上的事情实在是太多了。<br>  时间过得真快，一下子就高三了，努力！<br>  本来当时想着要经常更新博客的，但时间根本不允许，以后有时间了一定要频繁更新：）。。。</p>
+]]></content>
+      <tags>
+        <tag>说明</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>博客搭建日记--B站篇</title>
-    <url>/yyclass4/2021/06/11/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%97%A5%E8%AE%B0-B%E7%AB%99%E7%AF%87/</url>
+    <url>/yyclass4.github.io/2021/06/11/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%97%A5%E8%AE%B0-B%E7%AB%99%E7%AF%87/</url>
     <content><![CDATA[<p>  忽然想起movies分类页里啥也没有，只有两个onedrive的视频分享链接，可以说是空空如也，于是决定再加一点内容。在<a href="hexo.io">hexo</a>的官网找了一下，发现一的个很不错的插件，支持将B站的视频嵌入到博客中。</p>
 <div class="note info modern">
             <p>为什么不用Dplayer？诚然，<a href="https://github.com/MoePlayer/DPlayer">Dplayer</a>作为一个网站嵌入式视频播放器相当优秀，功能强大实用.调用也很方便。但是不足之处在于不支持类似于B站的流媒体格式，要求你必须拥有.mp4等格式的原始文件，这就极大的限制了它的使用范围。再说，哪个白嫖党会去网上租空间放视频？=。=</p>
@@ -99,36 +118,17 @@
 <p>但是在官网上，安装的命令是这样子的：</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install --save hexo-tag-bilibili</span><br></pre></td></tr></table></figure>
 <p>如果执行官网的这个命令，就会出现：</p>
-<img src="/yyclass4/2021/06/11/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%97%A5%E8%AE%B0-B%E7%AB%99%E7%AF%87/0.png" class title="实例图片">
+<img src="/yyclass4.github.io/2021/06/11/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%97%A5%E8%AE%B0-B%E7%AB%99%E7%AF%87/0.png" class title="实例图片">
 <div class="note danger">
             <p>请注意当前的版本是否符合其要求</p>
           </div>
 <p>可以看出，报了一堆的错，没有安装成功。折腾了好久，翻回之前的博客文章，才发现<code>npm</code>y应该换成<code>cnpm</code>，原因参见前几篇的文章。<br>好不容易安装完，又有新的问题，真是吐了。弄完之后随便塞个B站视频的id进去发现播放不了，研究了一下发现插件生成的网址key居然用的是av？！我的天，众所周知B站现在全是bv号，只有仅存的几个还保留着av号。</p>
-<img src="/yyclass4/2021/06/11/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%97%A5%E8%AE%B0-B%E7%AB%99%E7%AF%87/2.png" class title="逝去的av">
-<img src="/yyclass4/2021/06/11/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%97%A5%E8%AE%B0-B%E7%AB%99%E7%AF%87/3.png" class title="现在的bv">
+<img src="/yyclass4.github.io/2021/06/11/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%97%A5%E8%AE%B0-B%E7%AB%99%E7%AF%87/2.png" class title="逝去的av">
+<img src="/yyclass4.github.io/2021/06/11/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%97%A5%E8%AE%B0-B%E7%AB%99%E7%AF%87/3.png" class title="现在的bv">
 <p>唉，实在没办法，这个插件版本太旧了，项目作者也不知道多久没有更新过了，将就着用吧。</p>
 ]]></content>
       <tags>
         <tag>note</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第一天启动博客</title>
-    <url>/yyclass4/2020/08/01/%E7%AC%AC%E4%B8%80%E5%A4%A9%E5%90%AF%E5%8A%A8%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[ <img src="/yyclass4/2020/08/01/%E7%AC%AC%E4%B8%80%E5%A4%A9%E5%90%AF%E5%8A%A8%E5%8D%9A%E5%AE%A2/example.jpg" class title="This is an example image">
-<p>测试用文章</p>
-]]></content>
-      <tags>
-        <tag>测试</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>重新恢复博客</title>
-    <url>/yyclass4/2021/05/31/%E9%87%8D%E6%96%B0%E6%81%A2%E5%A4%8D%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[<p>  又有很长一段时间没有更新博客了，这段时间里发生了太多事情，太多变故了。首先是疫情的反弹，广州现在疫情防控形势很严峻，都是居家学习，所以才有时间更新博客，平时学业上的事情实在是太多了。<br>  时间过得真快，一下子就高三了，努力！<br>  本来当时想着要经常更新博客的，但时间根本不允许，以后有时间了一定要频繁更新：）。。。</p>
-]]></content>
-      <tags>
-        <tag>说明</tag>
       </tags>
   </entry>
 </search>
